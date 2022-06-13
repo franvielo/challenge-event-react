@@ -66,8 +66,8 @@ const App: React.FC<Props> = () => {
   // sort by description/title
   const sortDesc = () => {
     const sorted = [...list].sort((a, b) => {
-      const nameA = a.title.toUpperCase(); // ignore upper and lowercase
-      const nameB = b.title.toUpperCase(); // ignore upper and lowercase
+      const nameA = a.title.toUpperCase(); 
+      const nameB = b.title.toUpperCase(); 
       if (nameA < nameB) {return -1;}
       if (nameA > nameB) {return 1;}
       return 0;
