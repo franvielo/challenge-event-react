@@ -214,6 +214,7 @@ header button:hover {
   flex-direction: column;
   padding: 0 25px 25px 25px;
   box-sizing: border-box;
+  min-height: 300px;
 }
 
 .events ul {
