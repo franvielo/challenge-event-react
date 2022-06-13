@@ -22,24 +22,24 @@ const App: React.FC<Props> = ({events}) => {
   const [list, setList] = useState<Event[]>([
     {
         id: 1001,
-        title: 'ZExample 100',
-        start: '09/06/2015', 
-        end: '09/06/2015',  
-        created: '01/06/2015'     
+        title: 'Tony Stark | Iron man suit design',
+        start: '07/02/2022', 
+        end: '07/03/2022',  
+        created: '02/02/2022'     
     },
     {
         id: 2002,
-        title: 'BExample 99',
-        start: '09/06/2019', 
-        end: '09/0/2019', 
-        created: '02/06/2015'    
+        title: 'Elon Musk | Personal spacecraft',
+        start: '08/02/2022', 
+        end: '08/03/2022',  
+        created: '01/02/2022'     
     },
     {
         id: 3003,
-        title: 'Example 101',
-        start: '09/06/2013',  
-        end: '09/07/2013',  
-        created: '09/06/2020'    
+        title: 'Steve Wozniak | Grape computer',
+        start: '09/02/2022', 
+        end: '09/03/2022',  
+        created: '12/02/2021'    
     }
   ])
 
