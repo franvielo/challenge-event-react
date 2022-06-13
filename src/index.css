@@ -229,6 +229,7 @@ header button:hover {
   padding: 0 25px 25px 25px;
   box-sizing: border-box;
   margin-bottom: 50px;
+  min-height: 350px;
 }
 
 .events ul {
