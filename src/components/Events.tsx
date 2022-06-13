@@ -26,10 +26,10 @@ const Events: React.FC<Props> = ({events, onDelete, onSearch}) => {
                 if (onSearch == "" || event.title.toLowerCase().includes(onSearch.toLowerCase())) {
                     return (
                         <Item 
-                            key={event.id}
+                            key={event.ID}
                             events={[]}
                             onDelete={onDelete} 
-                            id={event.id}
+                            id={event.ID}
                             title={event.title}
                             start={event.start}
                             end={event.end}

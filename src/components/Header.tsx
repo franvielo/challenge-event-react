@@ -6,9 +6,11 @@ interface Props {
   statusAdd:boolean;
   onSort:(sort: string) => void;
   onSearch:(search: string) => void;
+  showCal: () => void;
+  statusCal:boolean;
 }
 
-const Header: React.FC<Props> = ({onShow, statusAdd, onSort, onSearch}) => {
+const Header: React.FC<Props> = ({onShow, statusAdd, onSort, onSearch, showCal, statusCal}) => {
   
   return (
     <>
@@ -16,7 +18,7 @@ const Header: React.FC<Props> = ({onShow, statusAdd, onSort, onSearch}) => {
           <h1>My calendar</h1>
           <button onClick={onShow}>{ statusAdd ? 'Close' : 'Add'}</button>
       </header>
-      <Sort onSort={onSort} onSearch={onSearch} />
+      <Sort onSort={onSort} onSearch={onSearch} showCal={showCal} statusCal={statusCal} />
     </>
   )
 }

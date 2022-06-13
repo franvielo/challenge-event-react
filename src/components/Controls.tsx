@@ -3,9 +3,11 @@ import { useState } from 'react'
 interface Props {
     onSort:(sort: string) => void;
     onSearch:(search: string) => void;
+    showCal: () => void;
+    statusCal: boolean;
 }
 
-const Sort: React.FC<Props> = ({onSort, onSearch}) => {
+const Sort: React.FC<Props> = ({onSort, onSearch, showCal, statusCal}) => {
 
     const [sortBy, setSortBy] = useState('date');
 
@@ -33,6 +35,9 @@ const Sort: React.FC<Props> = ({onSort, onSearch}) => {
                     placeholder='Search event' 
                     onChange={(e) => onSearch(e.target.value)} 
                     />
+            </div>
+            <div className="toggle">
+                <button onClick={showCal}>{ statusCal ? 'Hide' : 'Show'} calendar</button>
             </div>
         </div>
     )
