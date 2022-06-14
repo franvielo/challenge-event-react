@@ -15,7 +15,7 @@ const Header: React.FC<Props> = ({onShow, statusAdd, onSort, onSearch, showCal, 
   return (
     <>
       <header>
-          <h1>My calendar</h1>
+          <h1>My calendar app view</h1>
           <button onClick={onShow}>{ statusAdd ? 'Close' : 'Add'}</button>
       </header>
       <Sort onSort={onSort} onSearch={onSearch} showCal={showCal} statusCal={statusCal} />
