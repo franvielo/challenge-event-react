@@ -18,7 +18,7 @@ const Sort: React.FC<Props> = ({onSort, onSearch, showCal, statusCal}) => {
 
     return (
     
-        <div className="controls">
+        <div className="controls control-test-vercel">
             <div className='sort'>
                 <select name="sortEvents" onChange={sortData} defaultValue={'default'}>
                     <option value="default" >Sort by</option>
